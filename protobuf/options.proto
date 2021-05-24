@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package hedwig;
+
+import "google/protobuf/descriptor.proto";
+
+option java_package = "com.cloudchacho.hedwig";
+option go_package = "github.com/cloudchacho/hedwig-go/protobuf";
+
+message MessageOptions {
+  optional uint32 major_version = 1;
+  optional uint32 minor_version = 2;
+}
+
+extend google.protobuf.MessageOptions {
+  optional MessageOptions message_options = 51235;
+}
