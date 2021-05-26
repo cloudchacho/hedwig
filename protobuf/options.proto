@@ -8,8 +8,15 @@ option java_package = "com.cloudchacho.hedwig";
 option go_package = "github.com/cloudchacho/hedwig-go/protobuf";
 
 message MessageOptions {
+  // major version for this message type. this is required
   optional uint32 major_version = 1;
+
+  // minor version for this message type. this is optional since 0 is a valid minor version
   optional uint32 minor_version = 2;
+
+  // message type explicit declaration. this is optional and will be automatically
+  // inferred from message name assuming this format: `<MessageType>V<MajorVersion>`.
+  optional string message_type = 3;
 }
 
 extend google.protobuf.MessageOptions {

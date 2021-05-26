@@ -1,4 +1,4 @@
-# hedwig-protos
+# protocolbuffers
 
 Protocolbuffer files for Hedwig libraries.
 
