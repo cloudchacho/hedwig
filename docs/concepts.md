@@ -4,7 +4,7 @@ These are the primary concepts to know about when dealing with messaging systems
 
 ## Message
 
-A message is simply a packet of information. The information cann be anything - data, metadata, log. Hedwig provides
+A message is simply a packet of information. The information can be anything - data, metadata, log. Hedwig provides
 a mechanism for transferring this information from one system to another. A system can be a unix process / an app in a
 distributed system. The semantics of the information are up to you, Hedwig doesn't enforce a particular meaning - 
 only the schema to which your data must conform. Some possible messages are defined below. In addition to data, messages
@@ -14,7 +14,7 @@ have some metadata associated with them: id, creation timestamp, publisher name,
 
 The most common use case is to notify other systems that may be interested in events. For example, your User 
 Management app can publish a ``user-created`` message notification to all your apps. As publishers and consumers
-are loosely coupled, this separation of concerns is very effective in ensuring a stable eco-system. It's recommended
+are loosely coupled, this separation of concerns is very effective in ensuring a stable ecosystem. It's recommended
 that the data only includes control plane information, such as entity identifiers, and not data plan information, such
 as entity properties.
 
