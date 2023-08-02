@@ -22,4 +22,4 @@ the consumer.
 
 - [Python](https://github.com/cloudchacho/hedwig-python)
 - [Golang](https://github.com/cloudchacho/hedwig-go)
-- [Rust](https://github.com/cloudchacho/hedwig-rust)
+- [Rust](https://github.com/standard-ai/hedwig-rust)
